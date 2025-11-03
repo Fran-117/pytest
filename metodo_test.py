@@ -1,8 +1,8 @@
 class calculadora:
     def sum(result, a, b):
         result = a + b
-        return result
-    
+        return result 
+
     def res(result, a, b):
         result = a - b
         return result
