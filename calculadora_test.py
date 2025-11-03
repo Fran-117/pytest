@@ -2,12 +2,12 @@ from metodo_test import calculadora
 
 igual = calculadora()
 
-a=5
-b=4
+a = 5
+b = 5
 
 suma = igual.sum(a,b)
 def test_suma():
-    assert suma == 10
+    assert suma == a + b
 
 resta = igual.res(a,b)
 def test_resta():
