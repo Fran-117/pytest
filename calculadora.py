@@ -1,16 +1,10 @@
-class calculadora:
-    def sum(result, a, b):
-        result.value = a + b
-    
-    def res(result, a, b):
-        result.value = a - b
+from metodo import calculadora
 
-    def mul(result, a, b):
-        result.value = a * b
-    
-    def div(result, a, b):
-        if b != 0:
-            result.value = a / b
-        else:
-            result.value = "No válido porque es cero"
+igual = calculadora()
 
+a = int(input("Ingrese el primer numero: "))
+b = int(input("Ingrese el segundo numero: "))
+
+suma = igual.sum(a,b)
+
+print("La suma de sus numeros es: ", suma)
