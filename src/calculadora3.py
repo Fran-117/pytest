@@ -1,25 +1,14 @@
-from src.calculadora import calculadora
+from calculadora import calculadora
 
 igual = calculadora()
 
-a = 5
-b = 5
+a = int(input("Ingrese el primer numero: "))
+b = int(input("Ingrese el segundo numero: "))
 
 suma = igual.sum(a,b)
-def test_suma():
-    assert suma == a + b
-
 resta = igual.res(a,b)
-def test_resta():
-    assert resta == 0
-
 multiplicacion = igual.mul(a,b)
-def test_mul():
-    assert multiplicacion == 25
-
 division = igual.div(a,b)
-def test_div():
-    assert division == 1.0
 
 
 print("La suma de sus numeros es: ", suma)

@@ -1,17 +1,20 @@
-from metodo_test import calculadora
+class calculadora:
+    def sum(result, a, b):
+        result = a + b
+        return result 
 
-igual = calculadora()
+    def res(result, a, b):
+        result = a - b
+        return result
 
-a = int(input("Ingrese el primer numero: "))
-b = int(input("Ingrese el segundo numero: "))
+    def mul(result, a, b):
+        result = a * b
+        return result
+    
+    def div(result, a, b):
+        if b != 0:
+            result = a / b
+            return result
+        else:
+            return "No válido porque es cero"
 
-suma = igual.sum(a,b)
-resta = igual.res(a,b)
-multiplicacion = igual.mul(a,b)
-division = igual.div(a,b)
-
-
-print("La suma de sus numeros es: ", suma)
-print("La resta de sus numeros es: ", resta)
-print("La multiplicacion de sus numeros es: ", multiplicacion) 
-print("La division de sus numeros es: ", division)
