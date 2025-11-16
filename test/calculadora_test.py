@@ -1,4 +1,4 @@
-from src.calculadora import calculadora
+from src.calculadora_test.calculadora import calculadora
 
 igual = calculadora()
 
