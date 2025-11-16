@@ -7,7 +7,7 @@ b = 5
 
 suma = igual.sum(a,b)
 def test_suma():
-    assert suma == a + b
+    assert suma == 10
 
 resta = igual.res(a,b)
 def test_resta():
